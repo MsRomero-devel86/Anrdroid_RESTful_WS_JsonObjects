@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:orientation="vertical"
+     android:background="@drawable/start_background">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/trip_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/date_picker_title" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fill in Details" />
+
+    <EditText
+        android:id="@+id/route_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned|number|text|numberDecimal|textCapWords"
+        android:text="Route ID" />
+
+    <EditText
+        android:id="@+id/employeeID_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="@string/employeeID"/>
+
+    <EditText
+        android:id="@+id/driverName_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Driver Name" />
+
+    <EditText
+        android:id="@+id/vehicleID_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|textPersonName|textCapCharacters"
+        android:text="Vehicle ID" />
+
+    <EditText
+        android:id="@+id/passengerName_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="@string/passenger_hint"/>
+    <EditText
+        android:id="@+id/origination_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Point of Origin" />
+
+    <EditText
+        android:id="@+id/destination_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textShortMessage|textLongMessage|textAutoCorrect|textPersonName|text"
+        android:text="Point of Destination" />
+    <EditText
+        android:id="@+id/odometerStart_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="Start millage?" />
+
+    <EditText
+        android:id="@+id/odometerEnd_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="End Millage?" />
+
+    <EditText
+        android:id="@+id/tripTimeStart_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="datetime|time"
+        android:text="Time you Began Service" />
+
+    <EditText
+        android:id="@+id/tripEndTime_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="datetime|time"
+        android:text="Time Service Finshed" />
+
+    <EditText
+        android:id="@+id/fareAmount_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/fareAmount_hint" />
+    <EditText
+        android:id="@+id/fareCollected_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/fareCollected" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check only One type of Service" />
+
+    <CheckBox
+        android:id="@+id/list_item_medical_true_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:text="Medical"
+        android:textAlignment="center" />
+
+    <CheckBox
+        android:id="@+id/list_item_workStudy_true_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:text="Work/School"
+        android:textAlignment="center" />
+
+    <CheckBox
+        android:id="@+id/list_item_nonMedical_true_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:text="Non Medical"
+        android:textAlignment="center" />
+
+    </ScrollView>
+</LinearLayout>
+
